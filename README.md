@@ -34,3 +34,18 @@ There are undoubtedly errors and typos and most critically my own misunderstandi
 ![alt text](https://github.com/vbartle/MML-Companion/blob/master/screenshots/companion3.png?raw=true)
 ![alt text](https://github.com/vbartle/MML-Companion/blob/master/screenshots/companion4.png?raw=true)
 ![alt text](https://github.com/vbartle/MML-Companion/blob/master/screenshots/companion5.png?raw=true)
+
+## Logs 
+
+- updated to use `uv` as package manager, 
+  - first install uv, then run `uv sync` inside root project, 
+  - after run, to install kernel with installed library.
+  ```shell
+
+  uv run python -m ipykernel install \
+  --user \
+  --name mathematic_machine_learning_env \
+  --display-name 'Python (mathematic machine learning env)'
+  ```
+  - then you can choose kernel `Python (mathematic machine learning env)` in jupyter-lab, to run code with installed library 
+  ![choose-kernel](./screenshots/choose-kernel.png)
